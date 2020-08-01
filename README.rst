@@ -79,7 +79,7 @@ Cookiecutter was developed for use in \*\nix/OSX enviornments. When implementing
 
 .. code-block::
 
-    {% if cookiecutter.library_prefix %}{{ cookiecutter.library_prefix | lower }}_{% endif %}{{ cookiecutter.library_name | lower }}.py
+    {{ __library_name_full }}.py
 
 As such, Windows will block the use of these special characters in filenames. So when cookiecutter pulls the Adafruit CircuitPython template, the <library>.py and /examples/<library>_simpletest.py files are not created. This adds an extra step. Simply copy an existing library's .py files (and structure if  making a "package"), and change the prompted values (e.g. author name, library name, documentation information, etc).
 

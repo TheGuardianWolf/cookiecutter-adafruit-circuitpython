@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: MIT
 """
-`{% if cookiecutter.library_prefix %}{{ cookiecutter.library_prefix | lower }}_{% endif %}{{ cookiecutter.library_name | lower }}`
+`{{ cookiecutter.__library_name_full }}`
 ================================================================================
 
 {% if cookiecutter.library_description != "" %}

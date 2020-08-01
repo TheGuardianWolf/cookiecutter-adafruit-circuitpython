@@ -10,5 +10,7 @@
     "requires_register": "",
     "other_requirements": "",
     "_extensions": ["jinja2.ext.do"],
-    "_copy_without_render": ["*.github/*"]
+    "_copy_without_render": ["*.github/*"],
+    "__library_name_lower": "{{ cookiecutter.library_name | lower }}",
+    "__library_name_full": "{% if cookiecutter.library_prefix %}{{ cookiecutter.library_prefix | lower }}_{% endif %}{{ cookiecutter.__library_name_lower }}"
 }

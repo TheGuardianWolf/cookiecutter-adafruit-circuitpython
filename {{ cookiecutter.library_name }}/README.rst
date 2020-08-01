@@ -9,11 +9,11 @@
 Introduction
 ============
 
-.. image:: https://readthedocs.org/projects/{% if cookiecutter.library_prefix %}{{ cookiecutter.library_prefix | lower | replace("_", "-")}}-{% endif %}circuitpython-{{ cookiecutter.library_name | lower }}/badge/?version=latest
+.. image:: https://readthedocs.org/projects/{% if cookiecutter.library_prefix %}{{ cookiecutter.library_prefix | lower | replace("_", "-")}}-{% endif %}circuitpython-{{ cookiecutter.__library_name_lower }}/badge/?version=latest
 {%- if cookiecutter.library_prefix %}
-    :target: https://circuitpython.readthedocs.io/projects/{{ cookiecutter.library_name | lower }}/en/latest/
+    :target: https://circuitpython.readthedocs.io/projects/{{ cookiecutter.__library_name_lower }}/en/latest/
 {%- else %}
-    :target: https://circuitpython-{{ cookiecutter.library_name | lower }}.readthedocs.io/
+    :target: https://circuitpython-{{ cookiecutter.__library_name_lower }}.readthedocs.io/
 {%- endif %}
     :alt: Documentation Status
 
